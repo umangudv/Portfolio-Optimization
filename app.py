@@ -27,7 +27,7 @@ def monte_carlo_simulation(mean_returns, cov_matrix, num_portfolios=50000, risk_
     return results, weights_record
 
 # Streamlit app
-st.title('Portfolio Optimization with Monte Carlo Simulation')
+st.title('Portfolio Optimization with Modern Portfolio theory')
 
 tickers_input = st.text_input('Enter stock tickers separated by commas', 'AAPL,MSFT,GOOGL,AMZN,TSLA,FB')
 tickers = [ticker.strip() for ticker in tickers_input.split(',')]
